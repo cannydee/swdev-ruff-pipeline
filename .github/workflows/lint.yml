@@ -26,8 +26,8 @@ jobs:
 
       - name: Check formatting with ruff
         # --check means "do not change files, just fail if formatting is wrong"
-        run: ruff format --check .
+        run: ruff format --check src
 
       - name: Run ruff lint
         # ruff check returns nonzero exit code on lint errors
-        run: ruff check .
+        run: ruff check src
